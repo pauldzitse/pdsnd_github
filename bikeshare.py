@@ -41,7 +41,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         try:
-            month = input('Enter a month from january to june, otherwise enter "all" to apply no filter: ')
+            month = input('Enter a month from january to june, otherwise enter "all" to apply no filter: ').lower()
             if month in months:
                 print('\nBravo!\n')
                 break
