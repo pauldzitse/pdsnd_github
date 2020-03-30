@@ -231,7 +231,7 @@ def display_data(df):
     j = 5
     while True:
         user_wish = input('\nWould you like to view data? Enter yes or no\n\n')
-        if user_wish == 'yes':
+        if user_wish == 'yes' and j < length(df):
             print('\nFive rows printed!\n',df.iloc[i:j])
             i += 5
             j += 5
