@@ -29,7 +29,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington) and handle invalid inputs
     while True:
         try:
-            city = str(input('\nEnter the name of a city you want explore: '))
+            city = str(input('\nEnter the name of a city you want explore: ').lower())
             if city in cities:
                 print('\nFantastic!\n')
                 break
