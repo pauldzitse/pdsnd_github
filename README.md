@@ -12,7 +12,7 @@ Students are required in this project to fork a remote repository, clone it to t
 
 ### Files used
 
-- bikehare.pp
+- bikehare.py
 
 ### Credits
 
