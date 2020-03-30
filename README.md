@@ -14,6 +14,13 @@ Students are required in this project to fork a remote repository, clone it to t
 
 - bikehare.py
 
+- chicago.csv
+
+- new_york_city.csv
+
+- washington.csv
+
+
 ### Credits
 
 The template repository was forked from https://github.com/udacity/pdsnd_github
