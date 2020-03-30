@@ -28,7 +28,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington) and handle invalid inputs
     while True:
         try:
-            city = str(input('\nEnter the name of a city you want explore: '))
+            city = str(input('\nEnter the name of a city you want explore: ').lower())
             if city in cities:
                 print('\nFantastic!\n')
                 break
@@ -40,7 +40,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         try:
-            month = input('Enter a month from january to june, otherwise enter "all" to apply no filter: ')
+            month = input('Enter a month from january to june, otherwise enter "all" to apply no filter: ').lower()
             if month in months:
                 print('\nBravo!\n')
                 break
@@ -230,7 +230,7 @@ def display_data(df):
     j = 5
     while True:
         user_wish = input('\nWould you like to view data? Enter yes or no\n\n')
-        if user_wish == 'yes':
+        if user_wish == 'yes' and j < length(df):
             print('\nFive rows printed!\n',df.iloc[i:j])
             i += 5
             j += 5
